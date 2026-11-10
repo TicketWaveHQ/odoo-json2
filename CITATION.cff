@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "odoo-json2: dependency-free TypeScript and Python clients for Odoo's External JSON-2 API"
+version: 0.1.0
+date-released: "2026-11-10"
+license: MIT
+authors:
+  - name: "TicketWave HQ Ltd"
+repository-code: "https://github.com/TicketWaveHQ/odoo-json2"
+url: "https://ticketwavehq.com"
+abstract: >-
+  Small, dependency-free clients for Odoo's External JSON-2 API (Odoo 19 and
+  later) in TypeScript and Python, with typed errors, timeouts, a preflight
+  script, and a migration guide from XML-RPC and JSON-RPC.
+keywords:
+  - odoo
+  - json-2
+  - erp
+  - api-client
+  - typescript
+  - python

@@ -1,0 +1,51 @@
+{
+  "name": "odoo-json2",
+  "version": "0.1.0",
+  "description": "A small, dependency-free client for Odoo's External JSON-2 API (Odoo 19 and later).",
+  "license": "MIT",
+  "author": "TicketWave HQ Ltd",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TicketWaveHQ/odoo-json2.git",
+    "directory": "js"
+  },
+  "homepage": "https://github.com/TicketWaveHQ/odoo-json2#readme",
+  "bugs": {
+    "url": "https://github.com/TicketWaveHQ/odoo-json2/issues"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "odoo-json2-preflight": "./dist/preflight.js"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test test/client.test.mjs test/preflight.test.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "keywords": [
+    "odoo",
+    "json-2",
+    "erp",
+    "api-client",
+    "fetch"
+  ],
+  "devDependencies": {
+    "typescript": "7.0.2"
+  }
+}
